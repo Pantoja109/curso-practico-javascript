@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y descuentos | Curso Práctico de Javascript Platzi </title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/descuentos.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>PORCENTAJES Y DESCUENTOS</h1>
+        <p>Taller #2 del curso práctico de Javascript</p>
+    </header>
+    <section class="results">
+        <label id="resultadoOperacion"></label>
+    </section>
+    <section class="boxes">
+        <div class="boxes__cards">
+            <div>
+                <span class="boxes__cards--img"></span>
+            </div>
+            <form action="">
+                <input type="number" id="inputPrecio" placeholder="Precio del Producto">
+                <input type="text" id="inputCoupon" placeholder="Cupón de descuento!">
+                <button onclick="onClickButtonPriceDiscount()" type="button">Calcular</button>
+            </form>
+            <div class="descuentos">
+                <p>Puedes usar los cupones GIT, PLATZIRULES, DOCKER para obtener descuento.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>Página realizada por Andrés Pantoja</h2>
+    </footer>
+</body>
+</html>

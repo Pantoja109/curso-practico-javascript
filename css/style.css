@@ -1,0 +1,225 @@
+:root{
+    --soft-blue:#c4c4fd;
+    --light-blue: #ededff;
+    --dark-blue:#1c3f80;
+}
+
+body{
+    margin:0;
+    background-color: white;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(28, 63, 128);
+    display: grid;
+    grid-template-rows: 10% 10% 70% 10%;
+
+}
+
+.header {
+    grid-row: 1 /2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(196, 196, 253);
+    box-shadow:  -20px 20px 60px #dbd5ff,
+             20px -20px 60px #e8eeff;
+    color: var(--dark-blue);
+}
+
+.header h1{
+    font-size: 28px;
+    margin-bottom: 3px;
+    
+}
+
+.header p{
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.results {
+    grid-row: 2,3;
+    font-size: 30px;
+    width: 100%;
+    height: 60px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figures {
+    grid-row: 3,4;
+    width: 90%;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.figures__cards{
+    width: 400px;
+    height: 500px;
+    
+    border-radius: 50px;
+    box-shadow:  -20px 20px 60px #dbd5ff,
+             20px -20px 60px #e8eeff;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around ;
+    align-items: center;
+}
+
+.figures__cards form{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.figures__cards form label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.figures__cards form input{
+    height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--light-blue);
+    opacity: .6;
+    color: var(--dark-blue);
+}
+
+.figures__cards form button {
+    border-radius: 10px;
+    border: none;
+    background-color: var(--soft-blue);
+    cursor: pointer;
+    color: var(--dark-blue);
+    font-size: 16px;
+}
+
+.figures__cards--title {
+    display: flex;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.figures__cards--cuadrado{
+    background-image: url('./assets/square-20.svg');
+    background-position: center;
+    width: 50px;
+    height: 50px;
+}
+
+.figures__cards--triangulo{
+    background-image: url('../assets/triangle.svg');
+    background-position: center;
+    width: 50px;
+    height: 50px;
+}
+
+.figures__cards--circulo{
+    background-image: url('../assets/oval.svg');
+    background-position: center;
+    width: 50px;
+    height: 50px;
+}
+
+.boxes {
+    grid-row: 3,4;
+    width: 90%;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.boxes__cards {
+    width: 400px;
+    height: 500px;
+    border-radius: 50px;
+    box-shadow:  -20px 20px 60px #dbd5ff,
+             20px -20px 60px #e8eeff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxes__cards div {
+    display: flex;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.boxes__cards--img{
+    background-image: url('../assets/icons8-precio-caliente.gif');
+    background-position: center;
+    width: 100px;
+    height: 110px;
+}
+
+.boxes__cards form {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.boxes__cards form input{
+    height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--light-blue);
+    opacity: .6;
+    color: var(--dark-blue);
+}
+
+.boxes__cards form button {
+    border-radius: 10px;
+    border: none;
+    background-color: var(--soft-blue);
+    cursor: pointer;
+    color: var(--dark-blue);
+    font-size: 18px;
+}
+
+.descuentos {
+    width: 80%;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--soft-blue);
+    background-color: var(--light-blue);
+}
+
+.descuentos p {
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+footer {
+    grid-row:4 /5;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 10px;
+}
+

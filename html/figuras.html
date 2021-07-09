@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Figuras Geométricas | Curso Práctico de Javascript Platzi</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet"> 
+        <script src="../js/figuras.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <h1>FIGURAS GEOMÉTRICAS</h1>
+            <p>Taller #1 del curso práctico de Javascript</p>
+        </header>
+        <section class="results">
+            <label id="resultadoOperacion"></label>
+        </section>
+        <section class="figures">
+            <div class="figures__cards">
+                <div class="figures__cards--title">
+                    <span class="figures__cards--cuadrado"></span>
+                    <p>Cuadrado</p>
+                </div>
+                <form action="">
+                    <input id="inputCuadrado" type="number" placeholder="Medida de los lados del cuadrado"/>
+                    <button onclick="calcularPerimetroCuadrado()" type="button">Calcular Perímetro</button>
+                    <button onclick="calcularAreaCuadrado()" type="button">Calcular Área</button>
+                </form>
+            </div>
+            <div class="figures__cards">
+                <div class="figures__cards--title">
+                    <span class="figures__cards--triangulo"></span>
+                    <p>Triángulo</p>
+                </div>
+                <form action="">
+                    <input id="inputLadoTriangulo1" type="number" placeholder="Medida del lado A del Triángulo"/>                
+                    <input id="inputLadoTriangulo2" type="number" placeholder="Medida del lado B del Triángulo"/>                
+                    <input id="inputBaseTriangulo" type="number" placeholder="Medida de la base del Triángulo"/>
+                    <input id="inputAlturaTriangulo" type="number" placeholder="Medida de la altura del Triángulo"/>
+                    <button onclick="calcularPerimetroTriangulo()" type="button">Calcular Perímetro</button>
+                    <button onclick="calcularAreaTriangulo()" type="button">Calcular Área</button>
+                </form>
+            </div>
+            <div class="figures__cards">
+                <div class="figures__cards--title">
+                    <span class="figures__cards--circulo"></span>
+                    <p>Círculo</p>
+                </div>
+                <form action="">
+                    <input id="inputCirculo" type="number" placeholder="Medida del radio del círculo"/>
+                    <button onclick="calcularPerimetroCirculo()" type="button">Calcular Perímetro</button>
+                    <button onclick="calcularAreaCirculo()" type="button">Calcular Área</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <h2>Página realizada por Andrés Pantoja</h2>
+        </footer>
+    </body>
+</html>
